@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="icon" href="./Images/fresh-vegetables-food.jpg">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+
+        <div class="loginpage container">
+
+        <form>
+
+            <h1 class="mt-4">Register Form</h1>
+            <input type="email" class="logcont mt-4" id="email" placeholder="E-mail Id" required><br>  
+            <input type="text" class="logcont mt-4" id="name" placeholder="Username" required>
+            <input type="password" class="logcont mt-4" id="pass" placeholder="Password" required><br>
+                 
+            <input type="button" class="btn logcont mt-4" value="Sign in" onclick="registerUser()">
+        </form>
+        </div>
+    </div>
+
+    <style>
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0)), url(./Images/Login-background.jpg);
+            background-size: cover;
+            overflow: hidden;
+            
+        }
+        .loginpage{
+            width:400px;
+            height: 400px;
+            margin: auto;
+            box-sizing: border-box;
+            border-radius: 80px;
+            position: absolute; /* Center using absolute positioning*/ 
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 12px 12px 100px rgba(0, 0, 0, 0.89);
+            backdrop-filter: blur(2px);
+        }
+        h1{
+        
+            text-align: center;
+            font-weight: 1000;
+            color:black;
+        }
+        .logcont{
+            text-align: center;
+            font-size: large;
+            font-weight: 700;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 90px;
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            filter: blur(-2px);
+        }
+        #remember{
+            margin-left: 40px;
+            
+        }
+        #forget{
+            margin-left: 70px;
+            font-size: large;
+            font-weight: 540;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .btn{
+            background-color: limegreen;
+        }
+        p{
+            font-size: large;
+            font-weight: 540;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+        }
+        p a{
+            text-decoration: none; 
+        }
+    </style>
+
+</body>
+</html>

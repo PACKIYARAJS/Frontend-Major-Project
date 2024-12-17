@@ -1,0 +1,228 @@
+body, html{
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+}
+body{
+    overflow: visible;
+}
+
+.navbar{
+    position: sticky ;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 20px black;
+    background-color: rgb(30, 29, 29) !important;
+    background-size: cover;
+}
+.navbar-brand{
+    font-style: oblique;
+    font-weight: 800;
+    color: rgb(24, 186, 24) !important;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+img{
+    width: 40px;
+    height: 30px;
+}
+.navbar-nav {
+    padding: 5px 0px 5px 300px;
+    text-shadow: 0px 0px 30px rgb(6, 6, 6);
+    
+}
+.navbar-nav a{
+    font-size: larger;
+    font-weight: 500;
+    color: rgb(230, 227, 227) !important;
+    text-decoration:2px underline transparent;
+    box-sizing: border-box;
+}
+.navbar-nav a:hover{
+    text-decoration:2px underline green;
+}
+.btn{
+    color: white;
+    background-color: limegreen;
+}
+#navbarSupportedContent #logout{
+    font-weight: 700;
+    background-color: rgba(255, 0, 0, 0.518);
+}
+
+/* Home */
+
+#home{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./Images/istockphoto-1459952195-170667a.jpg);
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-size: cover;
+    
+}
+h1{
+    position: relative;
+    color: white;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50% , -50%);
+    font-size: 500%;
+    font-weight: 600;
+    text-shadow: 0px 1px 0px gray,
+    0px 2px 0px gray,  
+    0px 3px 0px gray,
+    0px 4px 0px gray,
+    0px 5px 0px gray,
+    0px 6px 0px gray,
+    0px 7px 0px gray;
+    text-transform: uppercase;  
+}
+p{
+    position: relative;
+    color: white;
+    top:30%;
+    text-align: center;
+    font-size: larger;
+}
+
+/* PRODUCTS */
+
+#product{
+    background-color: rgb(112, 111, 111);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-size: cover;
+
+}
+
+#product h1{
+    
+    top: 80%;
+    left: 40%;
+    text-align: center;
+    transform: translate(-40% ,0%);
+}
+
+#product img{
+    width:300px;
+    height:400px;
+}
+
+#product .card{
+    width:300px;
+    height:400px;
+    background-color: gainsboro !important;
+    border: none;
+    box-shadow: 14px 14px 20px rgba(0,0,0,.5),
+                inset 14px 14px 20px white;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;        
+    margin: 40px 60px;
+    transition: .5s;
+}
+
+.card .signin{
+    color: white;
+    background-color: green !important;
+}
+
+#product .card:hover{
+    box-shadow: inset 14px 14px 20px rgba(0,0,0,.5),
+                 4px 4px 10px black;
+transition: .5s;
+}
+.card-title{
+    text-align: center;
+}
+
+.model p{
+    color: black;
+}
+.img img{
+    width:200px;
+}
+.descri{
+    color: black;
+}
+.price{
+    color: black;
+}
+.quantity{
+    color: black;
+}
+
+/* contact */
+
+#contact{
+    background-color: green;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#contact img{
+    width: 700px;
+    height: 500px;
+    margin-top: 20%;
+}
+#contact h1{
+    text-align: center;
+    transform: translate(-90%, -60%);
+    margin-left:-5% ;
+}
+#contact form{
+    margin-top: 25%;
+    width: 500px;
+}
+#contact .text{
+    font-weight: 900;
+}
+
+/* About Us */
+
+#about{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ,url(./Images/fresh-vegetables-food.jpg);
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-size: cover;
+    overflow: hidden;
+}
+#about h1{
+    position: relative;
+    text-align: center;
+    transform: translate(-70%, -70%);
+    top: 80px;
+    text-align: center;
+    left: 70%;   
+}
+#about img{
+    width: 450px;
+    height: 450px;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+#about p{
+    margin-top: -15%;
+    margin-left: -20%;
+    text-align:justify;
+}
+#about p strong{
+    color: red;    
+}
+
+
+/* footer */
+
+footer p{
+    width:100%;
+    height:30px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
