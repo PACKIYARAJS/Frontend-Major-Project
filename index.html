@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Organic Products</title>
-  <link rel="icon" href="./Images/fresh-vegetables-food.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="./Images/fresh-vegetables-food.jpg">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,271 +13,94 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./style.css">
-
     <script src="./script.js"></script>
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbartop">
-      <div class="container-fluid">
-      <img src="./Images/fresh-vegetables-food.jpg">
-      <a class="navbar-brand">Organic Products</a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-
-      data-bs-target="#navbarSupportedContent" aria-expanded="false">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-   
-      <div class="collapse navbar-collapse container" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" id="h" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"id="p" href="#product">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"id="c" href="#contact">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="a" href="#about">Abouts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="a" href="./AddToCart.html">Your Cart</a>
-          </li>
-        </ul>
-        
-          <button class="btn btn-outline-danger" id="logout" onclick="logout()">Logout</button>
-      
-      </div>
-    </div>
-  </nav>
-  <!-- Home -->
-  <section class="container-fluid" id="home">
     
-    <h1>Organic food</h1>
-    <p>Organic food is grown without the use of synthetic chemicals, such as human-made pesticides and fertilizers, and does not contain genetically modified organisms (GMOs).</p>   
-    <p>Organic foods include fresh produce, meats, and dairy products as well as processed foods such as crackers, drinks, and frozen meals.</p>
-  </section>
+    <div class="container-fluid">       
 
-  <!-- Products -->
+        <div class="loginpage container">
+            <form>
 
-  <section class="container-fluid" id="product">
-    <h1>Products</h1>
-
-
-    <!-- row 1 -->
-
-
-    <div class="row">
-      <div class="col">
-    <div class="card">
-      <img src="./Images/Almonds.webp" class="card-img-top" alt="Almonds">
-      <div class="card-body">
-        <h5 class="card-title">Almonds</h5>
-        <button class="btn" onclick="product('Almonds', './Images/Almonds.webp', 'Organic Brand Premium - Vedaka 100% Natural California Almonds | 500g | Premium Badam | High in Fiber | Hygienically Packed | Grade - Independence',500)">Add to Cart</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="./Images/Oats.jpg" class="card-img-top" alt="Oats">
-      <div class="card-body">
-        <h5 class="card-title">Oats</h5>
-        <button class="btn" onclick="product('Oats', './Images/Oats.jpg', 'Healthy and nutritious oats | Perfect for breakfast | High in Fiber | 500g | Supports a balanced diet',200)">Add to Cart</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="./Images/Dates.webp" class="card-img-top" alt="Dates">
-      <div class="card-body">
-        <h5 class="card-title">Dates</h5>
-        <button class="btn" onclick="product('Dates', './Images/Dates.webp', 'Natural and fresh dates | Rich in nutrients | Perfect for snacks or baking | 200g',150)">Add to Cart</button>
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-  <!-- row 2 -->
-
-
-  <div class="row">
-    
-    <div class="col">
-  <div class="card">
-    <img src="./Images/chia seed2.jpg" class="card-img-top" alt="chia seed">
-    <div class="card-body">
-      <h5 class="card-title">chia seed</h5>
-      <button class="btn signin" id="chia seed" onclick="product('Chia seed','./Images/chia seed.webp','Organic Brand Premium Chia Seeds 500g Jar, Nutrient-Rich Superfood, Rich in Omega-3 Fatty Acids, Fiber, Protein',750)">Add to Cart</button>
-    </div>
-  </div>
-</div>
-
-<div class="col">
-  <div class="card">
-    <img src="./Images/Honey.jpg" class="card-img-top" alt="Honey">
-    <div class="card-body">
-      <h5 class="card-title">Honey</h5>
-      <button class="btn signin" id="Honey" onclick="product('Honey','./Images/Honey.jpg','Organic Brand Dabur Honey - 250g | 100% Pure | World’s No.1 Honey Brand with No Sugar Adulteration',350)">Add to Cart</button>
-    </div>
-  </div>
-</div>
-
-<div class="col">
-  <div class="card">
-    <img src="./Images/pumpkin seed.webp" class="card-img-top" alt="pumpkin seed">
-    <div class="card-body">
-      <h5 class="card-title">pumpkin seed</h5>
-      <button class="btn signin" id="pumpkin seed" onclick="product('pumpkin seed','./Images/pumpkin seed.webp','Organic Brand Premium pumpkin seeds | Immunity-Boosting, Fiber-Rich Superfood | Expertly Selected, Nutty Crunch | Lightly Salted | Sourced from Nature | Crafted with Care | 500G',500)">Add to Cart</button>
-    </div>
-  </div>
-</div>
-</div>
-
-
-<!-- row 3 -->
-
-
-<div class="row">
-  <div class="col">
-<div class="card">
-  <img src="./Images/dry fruits.webp" class="card-img-top" alt="dry fruit">
-  <div class="card-body">
-    <h5 class="card-title">dry fruit</h5>
-    <button class="btn signin" id="dry fruit" onclick="product('Dry fruit','./Images/dry fruits.webp','Organic Brand Premium Absolute Health Dry Fruits Mix, Premium Trail Mix | Healthy Mixed Nuts with Dry Fruits | Almonds | Cashews | Cranberry | Pumpkin Seeds | Candied Amla, Reusable Jar (1000g)',1200)">Add to Cart</button>
-  </div>
-</div>
-</div>
-<div class="col">
-<div class="card">
-  <img src="./Images/Walnut.webp" class="card-img-top" alt="Walnut">
-  <div class="card-body">
-    <h5 class="card-title">Walnut</h5>
-    <button class="btn signin" id="Walnut" onclick="product('Walnut','./Images/Walnut.webp','Organic Brand Premium Walnut 500g | All Natural | No Preservatives | No Additives | Gluten Free | Vegan | Plant Based | Non GMO | Walnuts Dry Fruit | Walnuts Without Shell | Akhrot Giri',600)">Add to Cart</button>
-  </div>
-</div>
-</div>
-<div class="col">
-<div class="card">
-  <img src="./Images/Sprouts.webp" class="card-img-top" alt="Sprouts">
-  <div class="card-body">
-    <h5 class="card-title">Sprouts</h5>
-    <button class="btn signin" id="Sprouts" onclick="product('Sprouts','./Images/Sprouts.webp','Organic Brand Premium Sprout Maker With 4 Compartments For Multi Purpose Use - Plastic Grocery Container Sprouted Grains Seeds Dal Channa Chole Ragi Organic Sprouting Jar (500Ml,4-Layer)',250)">Add to Cart</button>
-  </div>
-</div>
-</div>
-</div>
-
-
-<!-- row 4 -->
-
-
-<div class="row">
-  <div class="col">
-<div class="card">
-  <img src="./Images/Peanut Butter.jpg" class="card-img-top" alt="Peanut Butter">
-  <div class="card-body">
-    <h5 class="card-title">Peanut Butter</h5>
-    <button class="btn signin" id="Peanut Butter" onclick="product('Peanut Butter','./Images/Peanut Butter.jpg','Made from High Quality Roasted Peanuts 25% Protein per serving, Rich Source of Protein & Fibre Healthy and tasty spread, boosts energy Good Source of Vitamins E, B3 & B6 Rich | 300g ',145)">Add to Cart</button>
-  </div>
-</div>
-</div>
-<div class="col">
-<div class="card">
-  <img src="./Images/Paneer.webp" class="card-img-top" alt="Paneer">
-  <div class="card-body">
-    <h5 class="card-title">Paneer</h5>
-    <button class="btn signin" id="Paneer" onclick="product('Paneer','./Images/Paneer.webp','Discover the perfect balance of taste and nutrition with our A2 Paneer High Protein - Low Fat. Made from the finest A2 milk, this paneer is an excellent source | 500g',200)">Add to Cart</button>
-  </div>
-</div>
-</div>
-<div class="col">
-<div class="card">
-  <img src="./Images/cereal.webp" class="card-img-top" alt="cereal">
-  <div class="card-body">
-    <h5 class="card-title">cereal</h5>
-    <button class="btn signin" id="cereal" onclick="product('cereal','./Images/cereal.webp','Organic Sprouted Ragi, Almond, Raw Kerala Banana Powder Porridge Mix | 500g ',250)">Add to Cart</button> 
-  </div>
-</div>
-</div>
-</div>
-
-  </section>
-
-
-  <!-- Contact -->
-
-
-  <section class="container-fluid" id="contact">
-
-    <div class="container-fluid m-5">
-      <div class="row">
-        <div class="col">
-          <img src="./Images/contact.webp" class="img-fluid">
+            <h1 class="mt-4">Login</h1>
+            <input type="text" class="logcont mt-4" id="name" placeholder="Username" required>
+            <input type="password" class="logcont mt-4" id="pass" placeholder="Password" required><br>
+            <input type="checkbox" id="remember" class="mt-4">Remember Me <a href="./forgetpass.html" id="forget">Forget password</a>
+            <br>
+            <input type="button" class="btn logcont mt-4" value="Login" onclick="loginUser()">
+            <p class="mt-4">Don't have an account? <a href="./Register.html">Sign up</a></p>
+        </form>
         </div>
-        <div class="col">
-          <h1>CONTACT US</h1>
-          <form action="#" method="post">
-          <input type="name" placeholder="ENTER YOUR NAME" class="text form-control">
-          <input type="email" placeholder="ENTER YOUR E-mail" class="text form-control mt-3">
-          <textarea placeholder="ENTER YOUR MESSAGE" class="text form-control mt-3"></textarea>
-          <button class="btn btn-outline-success mt-3 text">Send Message</button>
-          </form>
-        </div>
-      </div>
     </div>
-  </section>
 
+    <style>
 
-<!-- About  -->
-
-
-<section class="container-fluid" id="about">
-
-  <div class="container-fluid">
-
-    <h1>ABOUTS</h1>
-    <div class="row">
-      <div class="col">
-          <img src="./Images/Abouts.jpg" class="img-fluid">
-      </div>
-      <div class="col">
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0)), url(./Images/Login-background.jpg);
+            background-size: cover;
+            overflow: hidden;
+            
+        }
+        .loginpage{
+            width:400px;
+            height: 400px;
+            margin: auto;
+            box-sizing: border-box;
+            border-radius: 80px;
+            position: absolute; /* Center using absolute positioning*/ 
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 12px 12px 100px rgba(0, 0, 0, 0.89);
+            backdrop-filter: blur(2px);
+        }
+        h1{
         
-        <p>When you think of organic food, your mind probably goes to fruits and vegetables first. 
-          While they may be the most common organic offerings, there are also benefits to eating <strong> dairy, meat, fish, and seafood.</strong> All of these types of organic food are readily available in grocery stores.<br>
-          Organic food is produced using holistic agricultural practices that focus on the environment and social responsibility. Here are some benefits of organic food: 
-          <br><strong>Healthy soil :</strong>
-          Organic farming practices focus on building healthy soil, which is the foundation for healthy plants and people. 
-          <br><strong>Minimal pollution :</strong>
-          Organic farming bans harmful chemicals, which helps to reduce pollution of water, air, and soil. 
-          <br><strong> water quality :</strong>
-          Organic farming practices use less water, which helps to improve water quality. 
-          <br><strong>Antibiotic resistance :</strong>
-          Organic food is more resistant to antibiotics than non-organic food, which is produced using chemicals. 
-          <br><strong>No artificial colors and preservatives :</strong>
-          Organic food does not contain artificial colors, preservatives, or hydrogenated fats. 
-          <br><strong> Naturally occurring pesticides :</strong>
-          Organic farming permits some naturally occurring pesticides, such as pyrethrins, light oils, copper, and sulfur. 
-          <br><strong>Animal welfare :</strong>
-          Organic producers must follow specific rules to maintain the health and welfare of their livestock. 
-          <br><strong> Green manure :</strong>
-          Green manure is made from organic plant waste and improves soil fertility without using dangerous chemicals. </p>
-      </div>
-    </div>
-  </div>
-</section>
+            text-align: center;
+            font-weight: 1000;
+            color:black;
+        }
+        .logcont{
+            text-align: center;
+            font-size: large;
+            font-weight: 700;
+            font-family:'Times New Roman', Times, serif;
+            margin-left: 90px;
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            filter: blur(-2px);
+        }
+        #remember{
+            margin-left: 40px;
+            
+        }
+        #forget{
+            margin-left: 70px;
+            font-size: large;
+            font-weight: 540;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .btn{
+            background-color: limegreen;
+        }
+        p{
+            font-size: large;
+            font-weight: 540;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+        }
+        p a{
+            text-decoration: none; 
+        }
+    </style>
 
-
-<!-- Footer -->
-
-<footer>
-  <p>Copyrights @frontendforever 2024</p>
-</footer>
-
-<script>checkSession();</script>
-  
 </body>
 </html>

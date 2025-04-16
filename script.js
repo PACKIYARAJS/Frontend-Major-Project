@@ -196,9 +196,9 @@ function registerUser() {
  
     localStorage.setItem("userEmail", email);
     localStorage.setItem("username", username);
-    localStorage.setItem("password", password);
+    localStorage.setItem("password", password); 
     alert("Registration successful! Please log in.");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   } else {
     alert("Please fill in all fields.");
   }
@@ -218,7 +218,7 @@ function loginUser() {
     sessionStorage.setItem("loggedIn", true);
     sessionStorage.setItem("currentUser", username);
   
-    window.location.href = "./index.html";
+    window.location.href = "./home.html";
   } else {
     alert("Invalid username or password.");
   }
@@ -238,7 +238,7 @@ function resetPassword() {
       localStorage.setItem("password", newPassword);
       alert("Password reset successful! Please log in.");
      
-      window.location.href = "./login.html";
+      window.location.href = "./index.html";
     } else {
       alert("Passwords do not match.");
     }
@@ -253,7 +253,7 @@ function checkSession() {
   const isLoggedIn = sessionStorage.getItem("loggedIn");
   if (!isLoggedIn) {
     alert("You are not logged in. Redirecting to login page.");
-    window.location.href = "./login.html";
+    window.location.href = "./index.html";
   }
 }
 
@@ -262,7 +262,7 @@ function checkSession() {
 function logout() {
   sessionStorage.clear();
   alert("You have been logged out!");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
 
   

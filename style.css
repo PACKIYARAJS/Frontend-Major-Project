@@ -158,7 +158,7 @@ transition: .5s;
 #contact{
     background-color: green;
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding: 0;
     background-size: cover;
     overflow: hidden;
@@ -214,7 +214,6 @@ transition: .5s;
 #about p strong{
     color: red;    
 }
-
 
 /* footer */
 
